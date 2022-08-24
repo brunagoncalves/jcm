@@ -1,6 +1,6 @@
 /* Fonts */
 /* Colors */
-@import url("https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Mulish:wght@300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700;900&family=Work+Sans:wght@300;400;500;700;900&display=swap");
 body {
   font-family: "Mulish", sans-serif;
   font-size: 0.9375rem;
@@ -9,58 +9,14 @@ body {
   color: #6C757D;
 }
 
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+}
+
+label, input, textarea, button {
   font-family: "Mulish", sans-serif;
-  font-weight: 700;
-  line-height: 1.35;
-  margin-bottom: 8px;
-  color: #212529;
-}
-
-.h1,
-h1 {
-  font-size: 2.125rem;
-  line-height: 40px;
-}
-
-.h2,
-h2 {
-  font-size: 1.625rem;
-}
-
-.h3,
-h3 {
-  font-size: 1.375rem;
-}
-
-.h4,
-h4 {
-  font-size: 1.125rem;
-}
-
-.h5,
-h5 {
-  font-size: 0.9375rem;
-}
-
-.h6,
-h6 {
-  font-size: 0.75rem;
-}
-
-.py-7 {
-  padding: 120px 0;
+  font-weight: 400;
 }
 
 /* Button */
@@ -76,14 +32,14 @@ h6 {
 }
 
 .btn-circled {
-  background-color: #3eb37c;
+  background-color: #3EB37C;
   color: #FFFFFF;
   border-radius: 75px;
 }
 .btn-circled:hover {
   background-color: transparent;
-  border-color: #3eb37c;
-  color: #3eb37c;
+  border-color: #3EB37C;
+  color: #3EB37C;
 }
 
 /* Others */
@@ -94,7 +50,7 @@ h6 {
   width: 32px;
   height: 2px;
   border-radius: 42px;
-  background-color: #3eb37c;
+  background-color: #3EB37C;
 }
 
 .nav-link {
@@ -104,7 +60,7 @@ h6 {
 }
 
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
-  color: #3eb37c;
+  color: #3EB37C;
 }
 
 /* Menu Responsive */
@@ -217,6 +173,11 @@ h6 {
 .main-banner {
   padding-left: 8%;
 }
+.main-banner h1 {
+  font-size: 2.5rem;
+  line-height: 3.125rem;
+  color: #645F88;
+}
 .main-banner p {
   font-size: 1.125rem;
   font-weight: 300;
@@ -235,14 +196,18 @@ h6 {
 }
 
 .title-section {
-  color: #6C757D;
+  font-size: 2rem;
+  line-height: 2.625rem;
+  color: #645F88;
 }
 
 .subtitle-section {
   display: block;
   text-transform: uppercase;
+  font-size: 1rem;
+  line-height: 1.5rem;
   letter-spacing: 3px;
-  color: #888888;
+  color: #898798;
   margin-bottom: 8px;
 }
 
@@ -261,7 +226,7 @@ h6 {
   line-height: 60px;
   font-size: 1.5rem;
   background-color: #FFFFFF;
-  color: #3eb37c;
+  color: #3EB37C;
   border-radius: 50%;
   text-align: center;
   box-shadow: 0 2px 4px rgba(95, 92, 120, 0.16);
@@ -279,10 +244,22 @@ h6 {
   margin-bottom: 8px;
 }
 .form-group label {
+  margin-left: 2px;
   margin-bottom: 2px;
 }
-.form-group input {
-  padding: 8px 16px;
+.form-group input, .form-group textarea {
+  width: 100%;
+  padding: 14px;
+  border-radius: 30px;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  color: #6C757D;
+}
+.form-group textarea:focus, .form-group input:focus {
+  padding: 14px;
+  color: #3EB37C;
+  border-color: #3EB37C;
+  box-shadow: 0 0 0 0;
 }
 .form-group textarea {
   resize: none;
@@ -295,7 +272,7 @@ h6 {
   }
 }
 footer {
-  background-color: #3eb37c;
+  background-color: #3EB37C;
   color: #FFFFFF;
 }
 footer p {
@@ -315,8 +292,8 @@ footer p {
   width: 60px;
   height: 60px;
   border-radius: 100%;
-  background: #3eb37c;
-  color: #F6F5FC !important;
+  background: #3EB37C;
+  color: #FFFFFF !important;
   text-align: center;
   font-size: 22px;
   line-height: 60px;

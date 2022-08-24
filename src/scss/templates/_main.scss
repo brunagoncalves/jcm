@@ -1,7 +1,7 @@
 /* Home */
 .banner-area {
   position: relative;
-  background-color: $light;
+  background-color: $background-section;
   margin-top: 16px;
   margin-bottom: 16px;
   border-radius: 30px;
@@ -10,6 +10,12 @@
 
 .main-banner {
   padding-left: 8%;
+
+  h1 {
+    font-size: 2.5rem;
+    line-height: 3.125rem;
+    color: $title-section;
+  }
 
   p {
     font-size: 1.125rem;
@@ -30,19 +36,23 @@
 }
 
 .title-section {
-  color: $black-light;
+  font-size: 2rem;
+  line-height: 2.625rem;
+  color: $title-section;
 }
 
 .subtitle-section {
   display: block;
   text-transform: uppercase;
+  font-size: 1rem;
+  line-height: 1.5rem;
   letter-spacing: 3px;
-  color: $black-lighter;
+  color: $subtitle-section;
   margin-bottom: 8px;
 }
 
 .bg-section {
-  background-color: $light;
+  background-color: $background-section;
 }
 
 /* Services */
@@ -77,11 +87,24 @@
   margin-bottom: 8px;
 
   label {
+    margin-left: 2px;
     margin-bottom: 2px;
   }
 
-  input {
-    padding: 8px 16px;
+  input, textarea {
+    width: 100%;
+    padding: 14px;
+    border-radius: 30px;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    color: $text;
+  }
+
+  textarea:focus, input:focus {
+    padding: 14px;
+    color: $primary-color;
+    border-color: $primary-color;
+    box-shadow: 0 0 0 0;
   }
 
   textarea {
