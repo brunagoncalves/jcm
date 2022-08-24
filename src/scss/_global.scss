@@ -80,6 +80,7 @@ h6 {
   border-radius: 75px;
 
   &:hover {
+    background-color: transparent;
     border-color: $primary-color;
     color: $primary-color;
   }
