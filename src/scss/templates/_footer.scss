@@ -1,0 +1,36 @@
+footer {
+  background-color: $primary-color;
+  color: $white;
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+/* Scroll to Top */
+.scroll-to-top {
+  text-decoration: none;
+  position: fixed;
+  right: 30px;
+  bottom: 50px;
+  z-index: 999;
+  visibility: hidden;
+
+  i {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background: $primary-color;
+    color: $light !important;
+    text-align: center;
+    font-size: 22px;
+    line-height: 60px;
+    display: block;
+    -webkit-box-shadow: 0 7px 22px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 7px 22px rgba(0, 0, 0, 0.08);
+  }
+}
+
+.reveal {
+  visibility: visible;
+}
